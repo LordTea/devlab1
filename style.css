@@ -1,0 +1,70 @@
+body {
+    background-image: url("https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg");
+    
+}
+
+.row{
+    text-align: center;
+    color:white;
+    font-size:20px;
+    background-color: transparent;
+    font-family: Cormorant Unicase;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+#about{
+    margin: auto;
+}
+#contact{
+    margin: auto;
+}
+.headshot{
+    width:30%;
+    border: groove 20px white;
+    margin: 40px;
+    border-radius: 100px;
+    animation-name: stuff;
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.mid{
+    font-family: Pacifico;
+    display: flex;
+    justify-content: center;
+    color:cyan;
+    align-items:center;
+    font-size:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color: transparent;
+}
+.aboutme{
+    width: 80%;
+    border: groove 10px white;
+    margin: auto;
+    animation-name: stuff;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#other{
+    width: 100%;
+}
+@keyframes stuff{
+    0% {border-color:white;}
+    25% {border-color:grey;}
+    50% {border-color:black;}
+    75% {border-color:grey;}
+    100% {border-color:white;}
+}
+
+@keyframes image {
+    0% {filter: none; -webkit-transform: rotate(0deg);}
+    50% {filter: invert(1); -webkit-transform: rotate(359deg);}  
+    100%    {filter: none; -webkit-transform: rotate(0deg);}
+}
+a{
+    color: white;
+}
