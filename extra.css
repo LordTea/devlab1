@@ -1,4 +1,12 @@
 body {
     text-align: center;
     font-size: large;
+    background-image: url("sky.png");
+    background-size: auto;
+    color: white;
+}
+
+h1 {
+    font-style: oblique;
+    font-weight: bold;
 }
