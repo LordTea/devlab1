@@ -13,6 +13,7 @@ h1 {
 
 h1:hover {
     color: green;
+    text-shadow: 5px 5px 5px blue;
 }
 
 .row{
@@ -51,4 +52,17 @@ h1:hover {
 #pitch{
     margin: auto;
     width:50%;
+}
+
+.answers {
+    font-size: 0px;
+    transition: font-size 2s;
+}
+
+h3:hover{
+    color:red;
+}
+
+h3:hover + .answers{
+    font-size: 20px;
 }

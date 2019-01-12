@@ -49,6 +49,7 @@ body {
     margin-top:5px;
     margin-bottom:5px;
     background-color: transparent;
+    text-shadow: 5px 5px 5px black;
 }
 .aboutme{
     width: 80%;
