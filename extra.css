@@ -10,3 +10,45 @@ h1 {
     font-style: oblique;
     font-weight: bold;
 }
+
+h1:hover {
+    color: green;
+}
+
+.row{
+    text-align: center;
+    color:white;
+    font-size:20px;
+    background-color: transparent;
+    font-family: Cormorant Unicase;
+    font-style: italic;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+#about{
+    margin: auto;
+}
+#contact{
+    margin: auto;
+}
+
+#hobby{
+    margin: auto;
+}
+
+#work{
+    margin: auto;
+}
+
+#home{
+    margin:auto;
+}
+
+#pitch{
+    margin: auto;
+    width:50%;
+}
