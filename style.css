@@ -1,6 +1,43 @@
-body {
+body{
+    background-color: black;
+    animation-name: backgroundcolorchange;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+#img1, #img2, #img3, #img4{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img1{
     background-image: url("image.jpg");
-    background-size: auto;
+    min-height: 100%;
+}
+
+#img2{
+    background-image: url(https://media.istockphoto.com/photos/christmas-lights-defocused-background-bokeh-gold-blue-picture-id613518332?k=6&m=613518332&s=612x612&w=0&h=Own5MdgJXjNhFd0YUyED1UP3mQsHeNhfML9F-DQYdYw=);
+    min-height: 300px;
+}
+
+#img3{
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    min-height: 300px;
+    text-align: center;
+}
+
+#img4{
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4Ku9x8aIg/glamorous-sparkly-background-texture-from-real-glitter_bdfxfpnfdx_thumbnail-full01.png");
+    min-height: 600px;
+    text-align: center;
+}
+
+#img5{
+    background-image: url("https://i.ytimg.com/vi/aZwev9_Y58A/maxresdefault.jpg");
+    min-height: 300px;
+    text-align: center;
 }
 
 .row{
@@ -11,24 +48,8 @@ body {
     font-family: Cormorant Unicase;
     font-style: italic;
 }
-.footer{
-    display: flex;
-    justify-content: center;
-}
-#about{
-    margin: auto;
-}
-#contact{
-    margin: auto;
-}
 
-#hobby{
-    margin: auto;
-}
 
-#work{
-    margin: auto;
-}
 .headshot{
     width:30%;
     border: groove 20px white;
@@ -39,21 +60,27 @@ body {
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-.mid{
+#name{
     font-family: Pacifico;
     display: flex;
     justify-content: center;
-    color:cyan;
     align-items:center;
     font-size:50px;
     margin-top:5px;
     margin-bottom:5px;
     background-color: transparent;
     text-shadow: 5px 5px 5px black;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+
+#name:hover{
+    filter: invert(100%);
+}
+
 .aboutme{
     width: 80%;
-    border: groove 10px white;
     margin: auto;
     animation-name: stuff;
     animation-duration: 10s;
@@ -72,11 +99,129 @@ body {
     100% {border-color:white;}
 }
 
-@keyframes image {
+@keyframes image{
     0% {filter: none; -webkit-transform: rotate(0deg);}
     50% {filter: invert(1); -webkit-transform: rotate(359deg);}  
     100%    {filter: none; -webkit-transform: rotate(0deg);}
 }
+
 a{
     color: white;
+}
+
+h1 {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: green;
+    text-shadow: 5px 5px 5px blue;
+}
+
+.row{
+    text-align: center;
+    color:white;
+    font-size:20px;
+    background-color: transparent;
+    font-family: Cormorant Unicase;
+    font-style: italic;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+#about{
+    margin: auto;
+}
+#contact{
+    margin: auto;
+}
+
+#hobby{
+    margin: auto;
+}
+
+#work{
+    margin: auto;
+}
+
+#home{
+    margin:auto;
+}
+
+#pitch{
+    margin: auto;
+    width:50%;
+}
+
+.answers {
+    font-size: 0px;
+    transition: font-size 2s;
+}
+
+h3:hover{
+    color: crimson;
+    text-shadow: 5px 5px 5px skyblue;
+}
+
+h3:hover + .answers{
+    font-size: 20px;
+}
+
+.project{
+    height: 200px;
+}
+
+@keyframes colorchange{
+    0% {color:black;}
+    10% {color:red;}
+    15% {color:orange;}
+    20% {color:yellow;}
+    25% {color:green;}
+    30% {color:blue;}
+    35% {color:indigo;}
+    40% {color:violet;}
+    45% {color:pink;}
+    50% {color:white;}
+    55% {color:white;}
+    60% {color:pink;}
+    65% {color:violet;}
+    70% {color:indigo;}
+    75% {color:blue;}
+    80% {color:green;}
+    85% {color:yellow;}
+    90% {color:orange;}
+    95% {color:red;}
+    100% {color:black;}
+}
+
+@keyframes backgroundcolorchange{
+    0% {background-color:black;}
+    10% {background-color:red;}
+    15% {background-color:orange;}
+    20% {background-color:yellow;}
+    25% {background-color:green;}
+    30% {background-color:blue;}
+    35% {background-color:indigo;}
+    40% {background-color:violet;}
+    45% {background-color:pink;}
+    50% {background-color:white;}
+    55% {background-color:white;}
+    60% {background-color:pink;}
+    65% {background-color:violet;}
+    70% {background-color:indigo;}
+    75% {background-color:blue;}
+    80% {background-color:green;}
+    85% {background-color:yellow;}
+    90% {background-color:orange;}
+    95% {background-color:red;}
+    100% {background-color:black;}
+}
+
+.set{
+    display: flex;
+    justify-content: space-between;
 }
